@@ -3,7 +3,7 @@ import astor
 import os
 from unittest.mock import MagicMock
 
-# Step 1: Use AST to extract the loop and ensure correct indentation
+# Use AST to extract the loop and ensure correct indentation
 def extract_loops_from_file(file_path):
     with open(file_path, "r", encoding="utf-8") as f:
         tree = ast.parse(f.read())  # Parse the entire file into an AST
@@ -15,7 +15,7 @@ def extract_loops_from_file(file_path):
 
     return loops
 
-# Step 2: Generate scaffold for each loop using AST
+# Generate scaffold for each loop using AST
 def create_scaffolding(loop_node):
     loop_code = astor.to_source(loop_node)  # Convert AST node back to source code
 
@@ -25,7 +25,7 @@ def create_scaffolding(loop_node):
             self.undefined_vars = set()
 
         def visit_Name(self, node):
-            if isinstance(node.ctx, ast.Load):  # Variable is being read, not assigned
+            if isinstance(node.ctx, ast.Load):
                 self.undefined_vars.add(node.id)
 
     # Find undefined variables in the loop
@@ -53,7 +53,7 @@ print("Loop has finished.")
 
     return mock_code
 
-# Step 3: Process all loops in a repository, and save them in a single output folder
+# Process all loops in a repository, and save them in a single output folder
 def process_loops_in_repo(repo_directory, output_folder):
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)  # Create the output folder if it doesn't exist
@@ -73,7 +73,7 @@ def process_loops_in_repo(repo_directory, output_folder):
                     loop_count += 1  # Increment the count to ensure unique filenames
                     print(f"Generated scaffold for loop {loop_count} in {file_path}")
 
-# Step 4: Specify the repository and output folder paths
+# Specify the repository and output folder paths
 if __name__ == "__main__":
     repo_dir = "/Users/candice/Python"  # Specify the repo path here
     output_dir = "/Users/candice/loops_output"  # Set output folder under /Users/candice
