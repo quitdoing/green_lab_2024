@@ -46,9 +46,9 @@ globals = MagicMock()
 {mock_vars}
 
 # Loop execution starts here
-print("Loop is starting...")  # 调试信息，表示循环开始
+print("Loop is starting...")
 {loop_code}
-print("Loop has finished.")  # 调试信息，表示循环结束
+print("Loop has finished.")
 """
 
     return mock_code
