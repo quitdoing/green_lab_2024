@@ -2,10 +2,10 @@ import os
 import subprocess
 import time
 
-folder_path = './loops2'
+folder_path = './loops 3 2'
 
 for filename in sorted(os.listdir(folder_path)):
-    if filename.endswith('.py') & ("loop9" in filename):
+    if filename.endswith('.py') & ("5" in filename):
         file_path = os.path.join(folder_path, filename)
         
         print(f"Running {filename}...")
