@@ -1,13 +1,32 @@
-# green_lab_2024
+# Green_Lab_2024_ROOT!
+
 Course project repository for Green Lab 2024
 
-You can see the project in the "master branch" which you should change from the main branch
+For Experiment-Runner part and loops, as well as Running Configurations it is possible to switch to the `master` branch.
 
+## Run Tables
 
-we have two types of run table
+- Run table for non-optimized loops is in `examples/loops/experiments_loops_no/loop_experiments_resit`.
+- Run table for optimized loops is in `examples/loops/experiments_loops_yes/loop_experiments_resit`.
 
-one is just contain one loop with optimizaiton and without optimization wich is file run_table1.csv
+## Replicating Experiments
 
-one is just contain several loops with optimizaiton and without optimization wich is file run_table.csv
+To replicate experiments, set up Experiment Runner and EnergiBridge, then run:
 
-we will discuss to decide what kind of run table to use
+```bash
+python experiment-runner/ examples/loops/RunnerConfigNo.py
+```
+
+for non-optimized loops, and:
+
+```bash
+python experiment-runner/ examples/loops/RunnerConfigOpt.py
+```
+
+for optimized loops.
+
+## Data Analysis
+
+The data analysis part is located in the `Analysis` folder.
+
+To run a specific test, execute the corresponding `.R` file with the name of the test.
