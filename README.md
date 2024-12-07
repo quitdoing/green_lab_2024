@@ -2,7 +2,7 @@
 
 Course project repository for Green Lab 2024
 
-__`master` branch__
+# __`master` branch__
 
 For Experiment-Runner part and loops, as well as Running Configurations it is possible to switch to the __`master`__ branch.
 
