@@ -1,0 +1,11 @@
+"loop_type1","loop_type2_cacheblocking","delta_cacheblocking","ci_lower_cacheblocking","ci_upper_cacheblocking","loop_type2_unrolling","delta_unrolling","ci_lower_unrolling","ci_upper_unrolling","loop_type2_batching","delta_batching","ci_lower_batching","ci_upper_batching"
+"loop1","loop1_opt_cacheblocking",1,0.995195217458883,1,"loop1_opt_unrolling",-0.7,-0.871457360783275,-0.376087743280509,"loop1_opt_batching",1,0.995195217458883,1
+"loop2","loop2_opt_cacheblocking",1,0.995195217458883,1,"loop2_opt_unrolling",1,0.995195217458883,1,"loop2_opt_batching",1,0.995195217458883,1
+"loop3","loop3_opt_cacheblocking",-0.8975,-0.992934378043531,-0.0970619941793182,"loop3_opt_unrolling",-0.385,-0.663467666743976,-0.012849730027173,"loop3_opt_batching",1,0.995195217458883,1
+"loop4","loop4_opt_cacheblocking",1,0.995195217458883,1,"loop4_opt_unrolling",1,0.995195217458883,1,"loop4_opt_batching",1,0.995195217458883,1
+"loop5","loop5_opt_cacheblocking",-0.265,-0.563725794374113,0.0950332581759414,"loop5_opt_unrolling",-0.7,-0.892481852018092,-0.291869542256137,"loop5_opt_batching",1,0.995195217458883,1
+"loop6","loop6_opt_cacheblocking",-1,-1,-0.995195217458883,"loop6_opt_unrolling",-1,-1,-0.995195217458883,"loop6_opt_batching",-1,-1,-0.995195217458883
+"loop7","loop7_opt_cacheblocking",-0.98,-0.996647098316279,-0.885442532783159,"loop7_opt_unrolling",-0.995,-0.999158010349971,-0.970610288500325,"loop7_opt_batching",-1,-1,-0.995195217458883
+"loop8","loop8_opt_cacheblocking",0.705,0.335511017335607,0.886496079471236,"loop8_opt_unrolling",1,0.995195217458883,1,"loop8_opt_batching",-1,-1,-0.995195217458883
+"loop9","loop9_opt_cacheblocking",-0.0175000000000001,-0.356930340949234,0.326012541389667,"loop9_opt_unrolling",-0.555,-0.797486129512102,-0.158149882996998,"loop9_opt_batching",-0.16,-0.472940253265888,0.1887855901884
+"loop10","loop10_opt_cacheblocking",-0.29,-0.604867558434759,0.103285578427429,"loop10_opt_unrolling",-0.075,-0.423241350217182,0.292549339389331,"loop10_opt_batching",-0.27,-0.588335281573408,0.120795882790485
